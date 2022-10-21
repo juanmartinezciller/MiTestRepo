@@ -1862,14 +1862,15 @@
       "Description": "Allows for DesignScript code to be authored directly"
     },
     {
-      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
-      "NodeType": "ExtensionNode",
-      "Id": "891a47d3ed8d4b7caecc3c8e229e2c19",
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.LastItem@var[]..[]",
+      "Id": "22cd27c85c6f4e64b53c1c34cd0e25ba",
       "Inputs": [
         {
-          "Id": "42897f28b6084a09a5136874e0b7d261",
-          "Name": "",
-          "Description": "Node to show output from",
+          "Id": "041a22191d474ee68e28a1c5cf934026",
+          "Name": "list",
+          "Description": "List to get the last item of\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -1878,17 +1879,17 @@
       ],
       "Outputs": [
         {
-          "Id": "6d18fc483662418a87d108c6f5dabebc",
-          "Name": "",
-          "Description": "Node output",
+          "Id": "2bf8e4c6fc8e4cdfaaaafa3e52840d03",
+          "Name": "item",
+          "Description": "Last item in the list",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
           "KeepListStructure": false
         }
       ],
-      "Replication": "Disabled",
-      "Description": "Visualize the node's output"
+      "Replication": "Auto",
+      "Description": "Retrieves the last item in a list.\n\nList.LastItem (list: var[]..[]): var[]..[]"
     }
   ],
   "Connectors": [
@@ -2186,11 +2187,6 @@
       "Start": "f3c8304da5784bb59753519d160c78cf",
       "End": "acf652e287c5483aa2509ba7a36782d4",
       "Id": "5a0b490ef07a4a209299d008ec56f6a5"
-    },
-    {
-      "Start": "18e6c714376641acafe55d212e7938c9",
-      "End": "42897f28b6084a09a5136874e0b7d261",
-      "Id": "04ada62bcc36490b93a317d203c9b971"
     },
     {
       "Start": "3c8e4979793644239aa384f059f2f14e",
@@ -2809,8 +2805,8 @@
         "Name": "List.GetItemAtIndex",
         "ShowGeometry": false,
         "Excluded": false,
-        "X": 13041.712830498576,
-        "Y": 569.027842836409
+        "X": 13068.5299201451,
+        "Y": 403.09710064854971
       },
       {
         "Id": "fd75109e837a494ba58f2de18157ffe3",
@@ -2833,14 +2829,14 @@
         "Y": 391.97854431630094
       },
       {
-        "Id": "891a47d3ed8d4b7caecc3c8e229e2c19",
+        "Id": "22cd27c85c6f4e64b53c1c34cd0e25ba",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Watch",
+        "Name": "List.LastItem",
         "ShowGeometry": true,
         "Excluded": false,
-        "X": 13510.076292349964,
-        "Y": 761.904927058863
+        "X": 13322.902407939118,
+        "Y": 707.493167097847
       }
     ],
     "Annotations": [
@@ -3060,8 +3056,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -7123.5771739898091,
-    "Y": -23.578740408637429,
-    "Zoom": 0.59663446745701088
+    "X": -3012.2337931960592,
+    "Y": 192.68106410571247,
+    "Zoom": 0.28313903965461645
   }
 }
