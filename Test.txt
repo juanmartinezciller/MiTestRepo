@@ -2,7 +2,5 @@
 Hi
 How are you
 ?
-
 Goodbye
-
 Haha
